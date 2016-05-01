@@ -34,6 +34,16 @@ public class HelloServiceTest {
     }
     
     @Test
+    public void simpleGetDefaultValueTest() {
+        
+        URI url = URI.create(String.format("http://localhost:%s/greeting", port));
+        Greeting greeting = restTemplate.getForObject(url, Greeting.class);
+        
+        // 'World' is default name
+        Assert.assertEquals("Hello, World!", greeting.getContent());
+    }
+    
+    @Test
     public void simplePostTest() {
         
         URI url = URI.create(String.format("http://localhost:%s/greeting", port));
