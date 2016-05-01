@@ -23,7 +23,7 @@ public class GreetingController implements GreetingService {
     public Greeting greetingByPost(
         /** 
          * Why do I need to duplicate @RequestBody annotation on implementation to make it work ??? 
-         * Otherwise POST payload is alwaus null. 
+         * Otherwise POST payload is always null. 
          */ 
         @RequestBody String name) {
         
