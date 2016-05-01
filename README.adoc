@@ -1,7 +1,4 @@
 ---
-tags: [rest]
-projects: [spring-framework]
----
 :spring_version: current
 :toc:
 :project_id: gs-rest-service
