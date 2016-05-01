@@ -8,4 +8,4 @@
 
 Example shows that there is a problem with annotations scanning in REST Controller if interface and implementation are in separate files.
 
-Please see comment in https://github.com/tjuchniewicz/gs-rest-service/blob/master/complete/src/main/java/hello/GreetingController.java#L28
+Please see comment in https://github.com/tjuchniewicz/gs-rest-service/blob/master/complete/src/main/java/hello/GreetingController.java#L39
