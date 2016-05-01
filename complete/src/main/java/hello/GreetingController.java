@@ -20,7 +20,7 @@ public class GreetingController implements GreetingService {
     }
 
     @Override
-    public Greeting greetingByPost(/** Why I need to use it to make it work ??? */ @RequestBody String name) {
+    public Greeting greetingByPost(/** Why do I need to duplicate @RequestBody annotation on imp[lementation to make it work ??? Otherwise POST payload is alwaus null. */ @RequestBody String name) {
         
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
