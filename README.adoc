@@ -9,3 +9,5 @@
 Example shows that there is a problem with annotations scanning in REST Controller if interface and implementation are in separate files.
 
 Please see comment in https://github.com/tjuchniewicz/gs-rest-service/blob/master/complete/src/main/java/hello/GreetingController.java#L39
+
+It seems it is how Spring works: http://stackoverflow.com/questions/37021375/why-i-must-use-requestparam-annotation-on-implementation-class-instead-of-int
